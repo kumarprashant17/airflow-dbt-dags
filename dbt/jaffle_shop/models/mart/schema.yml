@@ -1,0 +1,12 @@
+version: 2
+models:
+  - name: customer_orders
+    columns:
+      - name: full_name
+        description: customer full_name
+      - name: order_date
+        description: order date
+      - name: status
+        description: order status
+      - name: amount
+        description: order amount

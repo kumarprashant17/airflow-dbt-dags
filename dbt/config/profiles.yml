@@ -1,0 +1,13 @@
+jaffle_shop:
+  outputs:
+    local:
+      account: <account-name>
+      database: velotio_dbt
+      password: <strong-password>
+      role: ACCOUNTADMIN
+      schema: dbt
+      threads: 4
+      type: snowflake
+      user: velotio_user
+      warehouse: dbt_demo
+  target: local

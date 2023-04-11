@@ -1,0 +1,34 @@
+version: 2
+sources:
+  - name: datalake
+    schema: datalake
+    description: raw data source of customer table
+    tables:
+      - name: orders
+        columns:
+          - name: id
+            description: Unique id for each order
+          - name: user_id
+            description: user_id
+          - name: order_date
+            description: date of the order
+          - name: status
+            descriptions: status of the order
+  - name: payment_info
+    schema: payment_info
+    description: raw data source of customer table
+    tables:
+      - name: payments
+        columns:
+          - name: id
+            description: Unique id for each transaction
+          - name: orderid
+            description: order id
+          - name: paymentmethod
+            description: method of payment
+          - name: status
+            descriptions: status of the payment
+          - name: amount
+            description: amount in rupees
+          - name: created
+            description: date of the payment

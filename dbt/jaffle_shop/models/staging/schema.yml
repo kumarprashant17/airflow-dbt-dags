@@ -1,0 +1,44 @@
+version: 2
+models:
+  - name: customers_data
+    columns:
+      - name: id
+        description: Unique id for each customer
+      - name: first_name
+        description: customer first name
+        tests:
+          - not_null
+      - name: last_name
+        description: customer last name
+  - name: payments_data
+    columns:
+      - name: id
+        description: Unique id for each transaction
+        tests:
+          - unique
+      - name: orderid
+        description: order id
+        tests:
+          - not_null
+      - name: paymentmethod
+        description: method of payment
+      - name: status
+        descriptions: status of the payment
+      - name: amount
+        description: amount in rupees
+      - name: created
+        description: date of the payment
+  - name: orders_data
+    columns:
+      - name: id
+        description: Unique id for each order
+        tests:
+          - unique
+      - name: user_id
+        description: user_id
+        tests:
+          - not_null
+      - name: order_date
+        description: date of the order
+      - name: status
+        descriptions: status of the order

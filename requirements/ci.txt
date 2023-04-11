@@ -1,0 +1,9 @@
+boto3==1.16.39
+pyyaml==5.4.1
+dbt-core==1.2.0
+dbt-postgres==1.2.0
+dbt-redshift==1.2.0
+dbt-snowflake==1.2.0
+sqlfluff==1.1.0
+sqlfluff-templater-dbt==1.1.0
+cached-property==1.5.2
